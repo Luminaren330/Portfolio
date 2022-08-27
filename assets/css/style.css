@@ -40,6 +40,13 @@ img {
     color: var(--color-brand);
 }
 
+.bg-base {
+    background-color: var(--color-base);
+}
+#home {
+    margin-left: 150px;
+}
+
 .full-height {
     min-height: 100vh;
     height: 100%;
@@ -51,6 +58,25 @@ img {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
 /* NavBar */
 .navbar {
     background-color: var(--color-base);
@@ -60,6 +86,10 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
 }
 
 .navbar .nav-link:hover {
@@ -79,7 +109,7 @@ img {
     }
 /* content wrapper */
     #content-wrapper {
-        padding-left: 400px;
+        padding-left: var(--sidbar-width);
     }
 
 }
@@ -118,4 +148,59 @@ img {
 
 .custom-link:hover:after {
     width: 100%;
+}
+
+/* custom card */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+ .card-custom-image img {
+    height: 450px;
+    transition: all 0.4s ease;
+}
+
+/* Skills */
+ul {
+    /* width:auto; */
+    background-color: var(--color-base);
+    color: var(--color-brand);
+    padding: 20px;
+    border-radius: 30px;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+li {
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 5px;
+    transition: all 0.4s ease;
+}
+
+li:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+/* Contact */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control:placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
 }
