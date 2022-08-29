@@ -150,6 +150,9 @@ img {
     width: 100%;
 }
 
+
+
+
 /* custom card */
 
 .card-custom .card-custom-image {
@@ -163,7 +166,6 @@ img {
 
 /* Skills */
 ul {
-    /* width:auto; */
     background-color: var(--color-base);
     color: var(--color-brand);
     padding: 20px;
