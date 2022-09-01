@@ -76,6 +76,15 @@ img {
     background-color: var(--color-brand);
     color: var(--color-base);
 }
+.iconbox1 {
+    width: 10px;
+    height: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+    margin-right: 15px;
+}
 
 /* NavBar */
 .navbar {
